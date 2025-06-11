@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    tools:context=".Activity.RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="#f2f2f2"
+        android:gravity="center">
+
+        <!-- Title Section -->
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="282dp"
+            android:layout_height="180dp"
+            android:layout_margin="24dp"
+            android:src="@drawable/register" />
+
+        <TextView
+            android:id="@+id/registerTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="24sp"
+            android:textColor="#333"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center"/>
+
+        <!-- Username Field -->
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:padding="12dp"
+            android:textColor="#333"
+            android:textColorHint="#666"
+            android:backgroundTint="#00796b"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColor="#333"
+            android:textColorHint="#666"
+            android:backgroundTint="#00796b"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#333"
+            android:textColorHint="#666"
+            android:backgroundTint="#00796b"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Re-enter Password Field -->
+        <EditText
+            android:id="@+id/repasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Re-enter Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColor="#333"
+            android:textColorHint="#666"
+            android:backgroundTint="#00796b"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:backgroundTint="#00796b"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_marginTop="24dp"/>
+    </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

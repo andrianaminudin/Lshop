@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LShop</string>
+    <string name="title_splash"><font color="#DC6F31">Your Shoping</font> Destination \nWelcome to My Store</string>
+    <string name="signIn">Dont have an account? <font color="#DC6F31"> Register</font></string>
+</resources>
